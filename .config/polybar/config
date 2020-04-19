@@ -17,8 +17,8 @@
 ;==========================================================
 
 [colors]
-;background = ${xrdb:.background}
-background = #000000
+background = ${xrdb:.background}
+;background = #00000000
 background-alt = #444
 foreground = ${xrdb:color7}
 
@@ -46,29 +46,27 @@ color15 = ${xrdb:color15}
 
 alert = #bd2c40
 
+
 [bar/example]
-;monitor = ${env:MONITOR:HDMI-1}
+;monitor = HDMI-1
 width = 100%
-height = 27
-;offset-x = 1%
+height = 25
+;offset-x = 15
 ;offset-y = 1%
-radius = 6.0
+bottom = false
 fixed-center = false
+line-size = 2
+radius = 0
+override-redirect = false
 
 background = ${colors.background}
-foreground = ${colors.foreground}
 
-line-size = 3
-line-color = #00000000
-
-border-size = 4
-border-color = #00000000
+module-margin-left = 1
+module-margin-right = 2
 
 padding-left = 0
 padding-right = 2
 
-module-margin-left = 1
-module-margin-right = 2
 
 font-0 = UbuntuMono Nerd Font:size=11;1
 font-1 = InconsolataLGC Nerd Font:style=Medium;1
@@ -77,9 +75,11 @@ font-2 = TerminessTTFNerdFontMono:size=10;1
 modules-left = bspwm i3
 modules-center = mpd
 modules-right = cpu memory temperature battery date
+
+
 tray-position = right
 tray-padding = 2
-tray-background = #000000
+tray-background = ${colors.background}
 
 ;wm-restack = bspwm
 ;wm-restack = i3
@@ -121,7 +121,7 @@ label-mode-foreground = #000
 label-mode-background = ${colors.color1}
 
 ; focused = Active workspace on focused monitor
-label-focused = %index%
+label-focused = %icon%
 label-focused-foreground = #ffffff
 label-focused-background = ${colors.background-alt}
 label-focused-underline= ${colors.color3}
@@ -144,22 +144,19 @@ label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
 
 ; Separator in between workspaces
- label-separator = |
- label-separator-foreground = #ffffff
+label-separator = |
+label-separator-foreground = #ffffff
 
+ws-icon-0 = "1; " 
+ws-icon-1 = "2; "
+ws-icon-2 = "3; "
+ws-icon-3 = "4;ﭮ "
+ws-icon-4 = 5;5
+ws-icon-5 = 6;6
+ws-icon-6 = 7;7
+ws-icon-7 = 8;8
+ws-icon;8 = 9;9
 
-[module/mpd]
-type = internal/mpd
-format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
-
-icon-prev = 
-icon-stop = 
-icon-play = 
-icon-pause = 
-icon-next = 
-
-label-song-maxlen = 25
-label-song-ellipsis = true
 
 [module/cpu]
 type = internal/cpu
