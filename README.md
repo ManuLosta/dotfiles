@@ -7,6 +7,6 @@
 * **VSCode:** Pywal Theme
 * **Compositor:** Compton-tyrone
 
-![Screenshot](/screenshots/2020-04-19-1587337165_screenshot_1920x1080.jpg)
-![Screenshot](/screenshots/2020-04-19-1587337477_screenshot_1920x1080.jpg)
 ![Screenshot](/screenshots/2020-04-19-1587337528_screenshot_1920x1080.jpg)
+![Screenshot](/screenshots/2020-04-19-1587337477_screenshot_1920x1080.jpg)
+![Screenshot](/screenshots/2020-04-19-1587337165_screenshot_1920x1080.jpg)
