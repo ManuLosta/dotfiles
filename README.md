@@ -1,4 +1,4 @@
-#ManuLosta DotFiles
+# ManuLosta DotFiles
 * **Distro:** Ubuntu 18.04
 * **WM:** i3 Window Manager
 * **Bar:** Polybar
