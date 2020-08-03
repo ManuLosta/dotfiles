@@ -1,6 +1,6 @@
 # ManuLosta DotFiles
 
-## April 19
+## April 2020
 * **Distro:** Ubuntu 18.04
 * **WM:** i3 Window Manager
 * **Bar:** Polybar
