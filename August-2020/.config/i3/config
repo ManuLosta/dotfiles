@@ -37,9 +37,9 @@ font xft:Fira Code Nerd Font 8
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
-#Screenshot
-# Screenshot
-bindsym Print exec --no-startup-id scrot '%Y-%m-%d-%s_screenshot_$wx$h.png' -e 'mv $f ~/Pictures/Screenshots'
+# Screenshots
+bindsym Print exec --no-startup-id /home/manuel/.scripts/screenshot.sh full
+bindsym $mod+Print exec --no-startup-id /home/manuel/.scripts/screenshot.sh sel 
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.

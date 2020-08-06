@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/home/manuel/Projects/aim-training'
+let g:netrw_dirhist_4='/home/manuel/.oh-my-zsh'
+let g:netrw_dirhist_3='/home/manuel/.config/polybar'
+let g:netrw_dirhist_2='/home/manuel/.config/awesome/themes/darkcandy'
+let g:netrw_dirhist_1='/home/manuel/.config/sxhkd'

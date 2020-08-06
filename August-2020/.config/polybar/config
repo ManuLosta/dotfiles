@@ -195,8 +195,8 @@ label-unfocused-font = 3
 ; urgent = Workspace with urgency hint set
 label-urgent = ""
 label-urgent-foreground = ${colors.red}
-label-urgent-font = 1
-label-urgent-padding = 3
+label-urgent-font = 3
+label-urgent-padding = 1
 
 
 ;; ===================== MODULE OPEN APP =================
