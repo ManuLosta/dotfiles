@@ -1,5 +1,17 @@
 # ManuLosta DotFiles
 
+## August 2020
+* **Distro:** Arch Linux
+* **WM:** i3 Window Manager
+* **Bar:** Polybar
+* **Compositor:** Picom
+* **Font:** Fira Code
+* **Launcher:** Rofi
+* **Editor:** Neovim
+
+![Screenshot](/August-2020/screenshots/reddit.png)
+
+
 ## April 2020
 * **Distro:** Ubuntu 18.04
 * **WM:** i3 Window Manager
