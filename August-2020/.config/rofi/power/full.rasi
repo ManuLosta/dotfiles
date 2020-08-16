@@ -8,64 +8,54 @@
  */
 
 configuration {
-	font:							"Fira Code Nerd Font 16";
+	font:							"FantasqueSansMono Nerd Font 16";
     show-icons:                     false;
 	icon-theme: 					"Papirus";
     drun-display-format:            "{name}";
     disable-history:                false;
-    fullscreen:                     false;
+    fullscreen:                     true;
 	hide-scrollbar: 				true;
 	sidebar-mode: 					false;
 }
 
-* {
-    background:                     #1d1f28;
-    background-alt:                 #282a36;
-    foreground:                     #fdfdfd;
-    border:               			#282a36;
-    border-alt:               		#79e6f3;
-    selected:               		#282a36;
-    urgent:                         #f37f97;
-}
+@import "styles/colors.rasi"
 
 window {
     transparency:                   "real";
     background-color:               @background;
     text-color:                     @foreground;
-    border-radius:                  15px;
-	border:							6px;
-	border-color:					@border;
-    height:                         1030px;
-    width:                          12%;
-    location:                       east;
+    border-radius:                  0px;
+    height:                         100%;
+    width:                          100%;
+    location:                       center;
     x-offset:                       0;
-    y-offset:                       15;
+    y-offset:                       0;
 }
 
 prompt {
     enabled: 						true;
 	padding: 						4px 8px 4px 8px;
-	background-color: 				@border-alt;
+	background-color: 				@background-alt;
 	text-color: 					@foreground;
 }
 
 textbox-prompt-colon {
 	expand: 						false;
-	str: 							"System";
-	background-color: 				@border;
+	str: 							"System |";
+	background-color: 				@background-alt;
 	text-color: 					@foreground;
-    padding:                        2px 0px 4px 20px;
+    padding:                        4px 0px 4px 8px;
 }
 
 inputbar {
-	children: 						[ textbox-prompt-colon ];
-    background-color:               @border;
+	children: 						[ textbox-prompt-colon, prompt ];
+    background-color:               @background-alt;
     text-color:                     @foreground;
     expand:                         false;
     border:                  		1px;
-    border-radius:                  100%;
+    border-radius:                  0px;
     border-color:                  	@border;
-    margin:                         0px 0px 0px 0px;
+    margin:                         0px 60% 0px 0px;
     padding:                        8px 8px 8px 8px;
     position:                       center;
 }
@@ -90,25 +80,25 @@ case-indicator {
 
 listview {
     background-color:               @background;
-    margin:                         0% 0% 0% 0%;
+    margin:                         0% 5% 30% 0%;
     spacing:                        2.5%;
     cycle:                          false;
     dynamic:                        true;
-    layout:                         vertical;
+    layout:                         horizontal;
 }
 
 mainbox {
     background-color:               @background;
     spacing:                       	4%;
     children:                       [ inputbar, listview ];
-    padding:                        4% 2% 0% 2%;
+    padding:                        30% 0% 0% 7%;
 }
 
 element {
     background-color:               @background-alt;
     text-color:                     @foreground;
-    orientation:                    vertical;
-    border-radius:                  100%;
+    orientation:                    horizontal;
+    border-radius:                  0px;
     padding:                        0px 0px 0px -5px;
 }
 
@@ -118,18 +108,18 @@ element-icon {
 }
 
 element-text {
-	font:							"feather 32";
+	font:							"feather 64";
     expand:                         true;
     horizontal-align:               0.5;
     vertical-align:                 0.5;
-    margin:                         30px 30px 30px 35px;
+    margin:                         60px 60px 60px 65px;
 }
 
 element normal.urgent,
 element alternate.urgent {
     background-color:               @urgent;
     text-color:                     @foreground;
-    border-radius:                  100%;
+    border-radius:                  10px;
 }
 
 element normal.active,
@@ -139,10 +129,10 @@ element alternate.active {
 }
 
 element selected {
-    background-color:               @border-alt;
-    text-color:                     @background;
+    background-color:               @selected;
+    text-color:                     @foreground;
     border:                  		1px;
-    border-radius:                  100%;
+    border-radius:                  0px;
     border-color:                  	@border;
 }
 
