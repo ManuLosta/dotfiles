@@ -8,6 +8,7 @@
 * **Font:** Fira Code
 * **Launcher:** Rofi
 * **Editor:** Neovim
+* **Terminal:** Kitty
 
 ![Screenshot](/August-2020/screenshots/reddit.png)
 
